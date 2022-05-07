@@ -1,0 +1,22 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Dev from Github') {
+            steps {
+                echo 'Hello from Dev environmet'
+            }
+        }
+         stage('UAT from Github') {
+            steps {
+                echo 'Hello from UAT environment'
+            }
+        }    
+         stage('prod from Github') {
+            steps {
+                echo 'Hello from production evironment'        
+                
+            }
+        }
+    }
+}
